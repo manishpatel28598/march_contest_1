@@ -30,13 +30,16 @@ body{
      border: 1px solid white;
  }
  #error-message {
-   color: red;
+   color: rgb(169, 14, 14);
    margin-top: 20px;
  }
  .horizontal_line{
  width: 170px;
  height: 1px;
  background-color: white;
- border: 1px solid white;
+ border: 0px solid rgb(217, 214, 214);;
  margin-top: 5px;
+ }
+ #count-display{
+  color: rgb(217, 214, 214);
  }
