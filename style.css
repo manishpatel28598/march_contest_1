@@ -43,3 +43,6 @@ body{
  #count-display{
   color: rgb(217, 214, 214);
  }
+ .btn-container{
+  display: flex;
+ }

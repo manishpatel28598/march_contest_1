@@ -9,7 +9,7 @@ let count = 0;
 decrementButton.addEventListener("click", () => {
   if (count > 0) {
     count--;
-    countDisplay.innerHTML = `Your Current Count is : ${count}`;
+    countDisplay.innerHTML = "Your Current Count is :"+" "+count;
   } else {
     errorMessage.style.display = "block";
   }
@@ -17,9 +17,9 @@ decrementButton.addEventListener("click", () => {
 
 incrementButton.addEventListener("click", () => {
   count++;
+  clearButton.style.display = "block";
   countDisplay.innerHTML = `Your Current Count is : ${count}`;
   errorMessage.style.display = "none";
-  clearButton.style.display = "right";
 });
 
 clearButton.addEventListener("click", () => {
@@ -29,6 +29,6 @@ clearButton.addEventListener("click", () => {
   clearButton.style.display = "none";
 });
 
-countDisplay.addEventListener("click", () => {
-  errorMessage.style.display = "none";
-});
+// countDisplay.addEventListener("click", () => {
+//   errorMessage.style.display = "none";
+// });
