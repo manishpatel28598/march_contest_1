@@ -3,14 +3,13 @@ const incrementButton = document.getElementById("increment");
 const countDisplay = document.getElementById("count-display");
 const clearButton = document.getElementById("clear");
 const errorMessage = document.getElementById("error-message");
-// const btncontainer = document.getElementsByClassName("btn-container");
 
 let count = 0;
 
 decrementButton.addEventListener("click", () => {
   if (count > 0) {
     count--;
-    btncontainer.innerHTML = `Your Current Count is : ${count}`;
+    countDisplay.innerHTML = `Your Current Count is : ${count}`;
   } else {
     errorMessage.style.display = "block";
   }
